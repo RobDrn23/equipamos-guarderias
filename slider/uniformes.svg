@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#243b53"/><stop offset="1" stop-color="#17202d"/></linearGradient></defs>
+<rect width="900" height="620" rx="32" fill="url(#g)"/>
+<circle cx="135" cy="120" r="170" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="2"/>
+<g transform="translate(185 105)">
+<path d="M120 55 L200 15 L280 55 L330 95 L285 175 L255 155 L255 390 L65 390 L65 155 L35 175 L-10 95 Z" fill="#fff"/>
+<path d="M120 55 L200 15 L280 55 L245 105 L200 125 L155 105 Z" fill="#dbe6f7"/>
+<path d="M155 105 L200 125 L245 105" fill="none" stroke="#0b4fbd" stroke-width="8"/>
+<rect x="155" y="195" width="90" height="105" rx="8" fill="#0b4fbd"/>
+<path d="M175 230h50M175 255h50" stroke="#fff" stroke-width="8" opacity=".8"/>
+<path d="M65 170 L5 330 L85 330 L115 205M255 170 L315 330 L235 330 L205 205" fill="#f3f5f8"/>
+</g>
+<text x="70" y="555" font-family="Arial" font-size="30" font-weight="700" fill="white">UNIFORMES • IMAGEN CONCEPTUAL</text>
+</svg>
