@@ -3,380 +3,1182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Equipamos Guarderías - Seguridad, uniformes y textiles para guarderías. Soluciones que cuidan lo más importante.">
+
+  <meta name="description"
+    content="Equipamos Guarderías - Seguridad, uniformes y textiles para guarderías. Soluciones que cuidan lo más importante.">
+
   <title>Equipamos Guarderías | Soluciones para guarderías</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="site-header">
+
   <div class="container nav-wrap">
+
     <a class="brand" href="#inicio" aria-label="Equipamos Guarderías">
       <img src="assets/logo.png" alt="Equipamos Guarderías">
     </a>
 
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <button
+      class="menu-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false">
+      ☰
+    </button>
 
     <nav class="nav">
+
       <a href="#inicio">Inicio</a>
       <a href="#soluciones">Soluciones</a>
       <a href="#productos">Productos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
-      <a class="nav-cta" href="#contacto">Solicitar cotización</a>
+
+      <a class="nav-cta" href="#contacto">
+        Solicitar cotización
+      </a>
+
     </nav>
+
   </div>
+
 </header>
+
 
 <main>
 
-  <section id="inicio" class="hero">
-    <div class="hero-slider" aria-label="Presentación de Equipamos Guarderías">
-      <div class="slide active">
-        <div class="slide-image">
-      <img src="assets/guarderia.jpg" alt="Ambiente conceptual de una guardería" style="display:block !important; width:100% !important; height:100% !important; object-fit:cover !important;">
-          <div class="slide-badge">Espacios seguros y funcionales</div>
+
+<!-- =====================================================
+     HERO / CARRUSEL
+===================================================== -->
+
+<section id="inicio" class="hero">
+
+  <div
+    class="hero-slider"
+    aria-label="Presentación de Equipamos Guarderías">
+
+
+    <!-- SLIDE 1 -->
+
+    <div class="slide active">
+
+      <div class="slide-image">
+
+        <img
+          src="assets/guarderia.jpg"
+          alt="Ambiente de guardería"
+          style="display:block !important; width:100% !important; height:100% !important; object-fit:cover !important;">
+
+        <div class="slide-badge">
+          Espacios seguros y funcionales
         </div>
-        <div class="container slide-content">
-          <p class="eyebrow">SEGURIDAD • UNIFORMES • TEXTILES</p>
-          <h1>Soluciones que cuidan <span>lo más importante.</span></h1>
-          <p class="hero-text">
-            Soluciones especializadas para guarderías y centros infantiles,
-            pensadas para ayudarte a crear espacios seguros, funcionales y profesionales.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
-            <a class="btn btn-outline" href="#productos">Conocer soluciones</a>
-          </div>
-          <div class="hero-trust">
-            <span>Atención especializada</span>
-            <span>Soluciones para guarderías</span>
-            <span>Atención por proyecto</span>
-          </div>
-        </div>
+
       </div>
 
-      <div class="slide">
-        <div class="slide-image">
-          <img src="assets/seguridad.jpg" alt="Cámara de seguridad conceptual">
-          <div class="slide-badge">Sistemas de videovigilancia</div>
-        </div>
-        <div class="container slide-content">
-          <p class="eyebrow">SEGURIDAD</p>
-          <h1>Protección y vigilancia <span>para tu guardería.</span></h1>
-          <p class="hero-text">
-            Cámaras y soluciones de seguridad para ayudarte a mantener mayor control
-            y tranquilidad en tus instalaciones.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#productos">Ver seguridad</a>
-            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="slide">
-        <div class="slide-image">
-          <img src="assets/uniformes.jpg" alt="Uniforme conceptual para personal de guardería">
-          <div class="slide-badge">Imagen y comodidad para tu personal</div>
-        </div>
-        <div class="container slide-content">
-          <p class="eyebrow">UNIFORMES</p>
-          <h1>Imagen, comodidad y <span>funcionalidad.</span></h1>
-          <p class="hero-text">
-            Prendas para el personal de guarderías, pensadas para el trabajo diario
-            y la imagen profesional de tu institución.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#productos">Ver uniformes</a>
-            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
-          </div>
-        </div>
-      </div>
+      <div class="container slide-content">
 
-      <div class="slide">
-        <div class="slide-image">
-          <img src="assets/textiles.jpg" alt="Textiles conceptuales para guarderías">
-          <div class="slide-badge">Confort y calidad para tu guardería</div>
-        </div>
-        <div class="container slide-content">
-          <p class="eyebrow">TEXTILES</p>
-          <h1>Confort y cuidado <span>en cada detalle.</span></h1>
-          <p class="hero-text">
-            Sábanas, fundas, colchonetas y otros textiles para las diferentes áreas
-            de cuidado y descanso.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#productos">Ver textiles</a>
-            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
-          </div>
-        </div>
-      </div>
-
-      <button class="slider-arrow slider-prev" type="button" aria-label="Imagen anterior">‹</button>
-      <button class="slider-arrow slider-next" type="button" aria-label="Imagen siguiente">›</button>
-
-      <div class="slider-dots" aria-label="Seleccionar imagen">
-        <button type="button" class="active" aria-label="Slide 1"></button>
-        <button type="button" aria-label="Slide 2"></button>
-        <button type="button" aria-label="Slide 3"></button>
-        <button type="button" aria-label="Slide 4"></button>
-      </div>
-    </div>
-  </section>
-
-  <section id="soluciones" class="section">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">NUESTRAS SOLUCIONES</p>
-        <h2>Todo lo que tu guardería necesita.</h2>
-        <p>
-          Estamos desarrollando nuestro catálogo para reunir productos y servicios
-          especializados en tres áreas principales.
+        <p class="eyebrow">
+          SEGURIDAD • UNIFORMES • TEXTILES
         </p>
-      </div>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">01</span>
-            <span class="card-label">SEGURIDAD</span>
-          </div>
-          <h3>Protege tus instalaciones.</h3>
-          <p>
-            Soluciones de videovigilancia y seguridad para ayudarte a mantener
-            mayor control y tranquilidad en tus instalaciones.
-          </p>
-          <ul>
-            <li>Cámaras de seguridad</li>
-            <li>Videovigilancia</li>
-            <li>Instalación y soporte</li>
-          </ul>
-          <a href="#contacto">Conocer soluciones →</a>
-        </article>
+        <h1>
+          Soluciones que cuidan
+          <span>lo más importante.</span>
+        </h1>
 
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">02</span>
-            <span class="card-label">UNIFORMES</span>
-          </div>
-          <h3>Una imagen profesional.</h3>
-          <p>
-            Prendas pensadas para el personal de guarderías, combinando
-            presentación, comodidad y funcionalidad.
-          </p>
-          <ul>
-            <li>Batas y mandiles</li>
-            <li>Filipinas y pantalones</li>
-            <li>Prendas personalizadas</li>
-          </ul>
-          <a href="#contacto">Conocer soluciones →</a>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <span class="card-index">03</span>
-            <span class="card-label">TEXTILES</span>
-          </div>
-          <h3>Confort para el cuidado.</h3>
-          <p>
-            Textiles y productos confeccionados para las diferentes áreas
-            de cuidado, descanso y operación de una guardería.
-          </p>
-          <ul>
-            <li>Sábanas y fundas</li>
-            <li>Textiles para descanso</li>
-            <li>Productos especiales</li>
-          </ul>
-          <a href="#contacto">Conocer soluciones →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="productos" class="section products">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">NUESTROS PRODUCTOS</p>
-        <h2>Soluciones para cada área de tu guardería.</h2>
-        <p>
-          Estamos preparando un catálogo especializado. Aquí incorporaremos
-          fotografías, fichas técnicas y productos reales conforme avancemos.
+        <p class="hero-text">
+          Soluciones especializadas para guarderías y centros infantiles,
+          pensadas para ayudarte a crear espacios seguros, funcionales y profesionales.
         </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#contacto">
+            Solicitar cotización
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="#soluciones">
+            Conocer soluciones
+          </a>
+
+        </div>
+
+
+        <div class="hero-trust">
+
+          <span>
+            Atención especializada
+          </span>
+
+          <span>
+            Soluciones para guarderías
+          </span>
+
+          <span>
+            Atención por proyecto
+          </span>
+
+        </div>
+
       </div>
 
-      <div class="product-categories">
-        <article class="product-category">
-          <div class="product-image placeholder-security">
-            <span>SEGURIDAD</span>
-            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
-          </div>
-          <div class="product-body">
-            <div class="product-meta"><span>01</span><strong>SEGURIDAD</strong></div>
-            <h3>Protección y vigilancia</h3>
-            <p>Soluciones para supervisar y proteger las instalaciones de tu guardería.</p>
-            <a href="#contacto">Solicitar información →</a>
-          </div>
-        </article>
+    </div>
 
-        <article class="product-category">
-          <div class="product-image placeholder-uniforms">
-            <span>UNIFORMES</span>
-            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
-          </div>
-          <div class="product-body">
-            <div class="product-meta"><span>02</span><strong>UNIFORMES</strong></div>
-            <h3>Imagen y funcionalidad</h3>
-            <p>Prendas para el personal, pensadas para el trabajo diario en guarderías.</p>
-            <a href="#contacto">Solicitar información →</a>
-          </div>
-        </article>
 
-        <article class="product-category">
-          <div class="product-image placeholder-textiles">
-            <span>TEXTILES</span>
-            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
-          </div>
-          <div class="product-body">
-            <div class="product-meta"><span>03</span><strong>TEXTILES</strong></div>
-            <h3>Confort y cuidado</h3>
-            <p>Textiles y productos confeccionados para las diferentes áreas de cuidado.</p>
-            <a href="#contacto">Solicitar información →</a>
-          </div>
-        </article>
+
+    <!-- SLIDE 2 -->
+
+    <div class="slide">
+
+      <div class="slide-image">
+
+        <img
+          src="assets/seguridad.jpg"
+          alt="Sistema de seguridad">
+
+        <div class="slide-badge">
+          Sistemas de videovigilancia
+        </div>
+
       </div>
 
-      <div class="catalog-cta">
+
+      <div class="container slide-content">
+
+        <p class="eyebrow">
+          SEGURIDAD
+        </p>
+
+        <h1>
+          Protección y vigilancia
+          <span>para tu guardería.</span>
+        </h1>
+
+        <p class="hero-text">
+          Cámaras y soluciones de seguridad para ayudarte a mantener
+          mayor control y tranquilidad en tus instalaciones.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#productos">
+            Ver seguridad
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="#contacto">
+            Solicitar cotización
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- SLIDE 3 -->
+
+    <div class="slide">
+
+      <div class="slide-image">
+
+        <img
+          src="assets/uniformes.jpg"
+          alt="Uniformes para personal de guardería">
+
+        <div class="slide-badge">
+          Imagen y comodidad para tu personal
+        </div>
+
+      </div>
+
+
+      <div class="container slide-content">
+
+        <p class="eyebrow">
+          UNIFORMES
+        </p>
+
+        <h1>
+          Imagen, comodidad y
+          <span>funcionalidad.</span>
+        </h1>
+
+        <p class="hero-text">
+          Prendas para el personal de guarderías, pensadas para el trabajo diario
+          y la imagen profesional de tu institución.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#productos">
+            Ver uniformes
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="#contacto">
+            Solicitar cotización
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- SLIDE 4 -->
+
+    <div class="slide">
+
+      <div class="slide-image">
+
+        <img
+          src="assets/textiles.jpg"
+          alt="Textiles para guarderías">
+
+        <div class="slide-badge">
+          Confort y calidad para tu guardería
+        </div>
+
+      </div>
+
+
+      <div class="container slide-content">
+
+        <p class="eyebrow">
+          TEXTILES
+        </p>
+
+        <h1>
+          Confort y cuidado
+          <span>en cada detalle.</span>
+        </h1>
+
+        <p class="hero-text">
+          Sábanas, fundas, colchonetas y otros textiles para las diferentes áreas
+          de cuidado y descanso.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="btn btn-primary"
+            href="#productos">
+            Ver textiles
+          </a>
+
+          <a
+            class="btn btn-outline"
+            href="#contacto">
+            Solicitar cotización
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- CONTROLES DEL CARRUSEL -->
+
+    <button
+      class="slider-arrow slider-prev"
+      type="button"
+      aria-label="Imagen anterior">
+      ‹
+    </button>
+
+
+    <button
+      class="slider-arrow slider-next"
+      type="button"
+      aria-label="Imagen siguiente">
+      ›
+    </button>
+
+
+    <div
+      class="slider-dots"
+      aria-label="Seleccionar imagen">
+
+      <button
+        type="button"
+        class="active"
+        aria-label="Slide 1">
+      </button>
+
+      <button
+        type="button"
+        aria-label="Slide 2">
+      </button>
+
+      <button
+        type="button"
+        aria-label="Slide 3">
+      </button>
+
+      <button
+        type="button"
+        aria-label="Slide 4">
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NUESTRAS SOLUCIONES
+===================================================== -->
+
+<section
+  id="soluciones"
+  class="section">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        NUESTRAS SOLUCIONES
+      </p>
+
+      <h2>
+        Todo lo que tu guardería necesita,
+        en un solo lugar.
+      </h2>
+
+      <p>
+        Integramos soluciones especializadas para ayudarte a equipar y operar
+        tu guardería con seguridad, imagen profesional y productos textiles.
+      </p>
+
+    </div>
+
+
+
+    <div class="cards">
+
+
+      <!-- SEGURIDAD -->
+
+      <article class="card solution-card">
+
+        <div class="solution-image">
+
+          <img
+            src="assets/seguridad.jpg"
+            alt="Seguridad y videovigilancia">
+
+          <span>
+            01
+          </span>
+
+        </div>
+
+
+        <div class="card-top">
+
+          <span class="card-label">
+            SEGURIDAD
+          </span>
+
+        </div>
+
+
+        <h3>
+          Protege tus instalaciones.
+        </h3>
+
+
+        <p>
+          Soluciones de videovigilancia y seguridad para ayudarte a mantener
+          mayor control y tranquilidad en tus instalaciones.
+        </p>
+
+
+        <ul>
+
+          <li>
+            Cámaras de seguridad
+          </li>
+
+          <li>
+            Videovigilancia
+          </li>
+
+          <li>
+            Instalación y soporte
+          </li>
+
+        </ul>
+
+
+        <a href="#productos">
+          Ver soluciones →
+        </a>
+
+      </article>
+
+
+
+      <!-- UNIFORMES -->
+
+      <article class="card solution-card">
+
+        <div class="solution-image">
+
+          <img
+            src="assets/uniformes.jpg"
+            alt="Uniformes para personal de guardería">
+
+          <span>
+            02
+          </span>
+
+        </div>
+
+
+        <div class="card-top">
+
+          <span class="card-label">
+            UNIFORMES
+          </span>
+
+        </div>
+
+
+        <h3>
+          Una imagen profesional.
+        </h3>
+
+
+        <p>
+          Prendas pensadas para el personal de guarderías, combinando
+          presentación, comodidad y funcionalidad.
+        </p>
+
+
+        <ul>
+
+          <li>
+            Batas y mandiles
+          </li>
+
+          <li>
+            Filipinas y pantalones
+          </li>
+
+          <li>
+            Prendas personalizadas
+          </li>
+
+        </ul>
+
+
+        <a href="#productos">
+          Ver soluciones →
+        </a>
+
+      </article>
+
+
+
+      <!-- TEXTILES -->
+
+      <article class="card solution-card">
+
+        <div class="solution-image">
+
+          <img
+            src="assets/textiles.jpg"
+            alt="Textiles para guarderías">
+
+          <span>
+            03
+          </span>
+
+        </div>
+
+
+        <div class="card-top">
+
+          <span class="card-label">
+            TEXTILES
+          </span>
+
+        </div>
+
+
+        <h3>
+          Confort para el cuidado.
+        </h3>
+
+
+        <p>
+          Textiles y productos confeccionados para las diferentes áreas
+          de cuidado, descanso y operación de una guardería.
+        </p>
+
+
+        <ul>
+
+          <li>
+            Sábanas y fundas
+          </li>
+
+          <li>
+            Textiles para descanso
+          </li>
+
+          <li>
+            Productos especiales
+          </li>
+
+        </ul>
+
+
+        <a href="#productos">
+          Ver soluciones →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTOS
+===================================================== -->
+
+<section
+  id="productos"
+  class="section products">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        NUESTROS PRODUCTOS
+      </p>
+
+      <h2>
+        Soluciones para cada área de tu guardería.
+      </h2>
+
+      <p>
+        Aquí iremos incorporando nuestro catálogo real con fotografías,
+        características y opciones de cotización.
+      </p>
+
+    </div>
+
+
+
+    <div class="product-categories">
+
+
+      <!-- PRODUCTOS SEGURIDAD -->
+
+      <article class="product-category">
+
+        <div class="product-image">
+
+          <img
+            src="assets/seguridad.jpg"
+            alt="Productos de seguridad">
+
+        </div>
+
+
+        <div class="product-body">
+
+          <div class="product-meta">
+
+            <span>
+              01
+            </span>
+
+            <strong>
+              SEGURIDAD
+            </strong>
+
+          </div>
+
+
+          <h3>
+            Protección y vigilancia
+          </h3>
+
+
+          <p>
+            Soluciones para supervisar y proteger las instalaciones
+            de tu guardería.
+          </p>
+
+
+          <a href="#contacto">
+            Solicitar información →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCTOS UNIFORMES -->
+
+      <article class="product-category">
+
+        <div class="product-image">
+
+          <img
+            src="assets/uniformes.jpg"
+            alt="Uniformes para guarderías">
+
+        </div>
+
+
+        <div class="product-body">
+
+          <div class="product-meta">
+
+            <span>
+              02
+            </span>
+
+            <strong>
+              UNIFORMES
+            </strong>
+
+          </div>
+
+
+          <h3>
+            Imagen y funcionalidad
+          </h3>
+
+
+          <p>
+            Prendas para el personal, pensadas para el trabajo diario
+            en guarderías.
+          </p>
+
+
+          <a href="#contacto">
+            Solicitar información →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCTOS TEXTILES -->
+
+      <article class="product-category">
+
+        <div class="product-image">
+
+          <img
+            src="assets/textiles.jpg"
+            alt="Textiles para guarderías">
+
+        </div>
+
+
+        <div class="product-body">
+
+          <div class="product-meta">
+
+            <span>
+              03
+            </span>
+
+            <strong>
+              TEXTILES
+            </strong>
+
+          </div>
+
+
+          <h3>
+            Confort y cuidado
+          </h3>
+
+
+          <p>
+            Textiles y productos confeccionados para las diferentes
+            áreas de cuidado.
+          </p>
+
+
+          <a href="#contacto">
+            Solicitar información →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+
+    <div class="catalog-cta">
+
+      <div>
+
+        <strong>
+          ¿Buscas un producto específico?
+        </strong>
+
+        <p>
+          Estamos construyendo nuestro catálogo.
+          Si no encuentras lo que necesitas, pregúntanos.
+        </p>
+
+      </div>
+
+
+      <a
+        class="btn btn-primary"
+        href="#contacto">
+        Preguntar por un producto
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LLAMADA A LA ACCIÓN
+===================================================== -->
+
+<section class="quote-band">
+
+  <div class="container quote-content">
+
+    <div>
+
+      <p class="eyebrow">
+        EQUIPAMIENTO PROFESIONAL
+      </p>
+
+      <h2>
+        Un proyecto. Diferentes necesidades.
+        Una sola solución.
+      </h2>
+
+      <p>
+        Cuéntanos qué necesita tu guardería y preparemos una propuesta.
+      </p>
+
+    </div>
+
+
+    <a
+      class="btn btn-light"
+      href="#contacto">
+      Solicitar cotización
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NOSOTROS
+===================================================== -->
+
+<section
+  id="nosotros"
+  class="section section-light">
+
+  <div class="container two-column">
+
+
+    <div>
+
+      <p class="eyebrow">
+        ¿POR QUÉ EQUIPAMOS GUARDERÍAS?
+      </p>
+
+      <h2>
+        Un proveedor especializado para tu proyecto.
+      </h2>
+
+    </div>
+
+
+
+    <div class="benefits">
+
+
+      <div class="benefit">
+
+        <span>
+          01
+        </span>
+
         <div>
-          <strong>¿Buscas un producto específico?</strong>
-          <p>Estamos construyendo nuestro catálogo. Si no encuentras lo que necesitas, pregúntanos.</p>
-        </div>
-        <a class="btn btn-primary" href="#contacto">Preguntar por un producto</a>
-      </div>
-    </div>
-  </section>
 
-  <section class="quote-band">
-    <div class="container quote-content">
-      <div>
-        <p class="eyebrow">EQUIPAMIENTO PROFESIONAL</p>
-        <h2>Un proyecto. Diferentes necesidades. Una sola solución.</h2>
-        <p>Cuéntanos qué necesita tu guardería y preparemos una propuesta.</p>
-      </div>
-      <a class="btn btn-light" href="#contacto">Solicitar cotización</a>
-    </div>
-  </section>
+          <h3>
+            Enfoque especializado
+          </h3>
 
-  <section id="nosotros" class="section section-light">
-    <div class="container two-column">
-      <div>
-        <p class="eyebrow">¿POR QUÉ EQUIPAMOS GUARDERÍAS?</p>
-        <h2>Un proveedor especializado para tu proyecto.</h2>
-      </div>
+          <p>
+            Diseñamos nuestra oferta pensando específicamente
+            en las necesidades de las guarderías.
+          </p>
 
-      <div class="benefits">
-        <div class="benefit">
-          <span>01</span>
-          <div>
-            <h3>Enfoque especializado</h3>
-            <p>Diseñamos nuestra oferta pensando específicamente en las necesidades de las guarderías.</p>
-          </div>
         </div>
 
-        <div class="benefit">
-          <span>02</span>
-          <div>
-            <h3>Soluciones integrales</h3>
-            <p>Reunimos diferentes categorías para facilitar la compra y coordinación de tu proyecto.</p>
-          </div>
-        </div>
-
-        <div class="benefit">
-          <span>03</span>
-          <div>
-            <h3>Atención personalizada</h3>
-            <p>Cada guardería puede tener necesidades diferentes; por eso la cotización se adapta a cada proyecto.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="proyectos" class="section projects">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">NUESTROS PROYECTOS</p>
-        <h2>Proyectos que iremos mostrando aquí.</h2>
-        <p>
-          Esta sección quedará preparada para incorporar fotografías de instalaciones,
-          trabajos realizados y casos de éxito cuando tengamos ese material.
-        </p>
       </div>
 
-      <div class="project-placeholder">
-        <div class="placeholder-mark">EG</div>
+
+
+      <div class="benefit">
+
+        <span>
+          02
+        </span>
+
         <div>
-          <strong>Galería de proyectos</strong>
-          <p>Próximamente incorporaremos fotografías y experiencias reales.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="contacto" class="section contact">
-    <div class="container contact-grid">
+          <h3>
+            Soluciones integrales
+          </h3>
+
+          <p>
+            Reunimos diferentes categorías para facilitar la compra
+            y coordinación de tu proyecto.
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="benefit">
+
+        <span>
+          03
+        </span>
+
+        <div>
+
+          <h3>
+            Atención personalizada
+          </h3>
+
+          <p>
+            Cada guardería puede tener necesidades diferentes;
+            por eso la cotización se adapta a cada proyecto.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROYECTOS
+===================================================== -->
+
+<section
+  id="proyectos"
+  class="section projects">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        NUESTROS PROYECTOS
+      </p>
+
+      <h2>
+        Proyectos que iremos mostrando aquí.
+      </h2>
+
+      <p>
+        Esta sección quedará preparada para incorporar fotografías
+        de instalaciones, trabajos realizados y casos de éxito
+        cuando tengamos ese material.
+      </p>
+
+    </div>
+
+
+    <div class="project-placeholder">
+
+      <div class="placeholder-mark">
+        EG
+      </div>
+
       <div>
-        <p class="eyebrow">SOLICITA UNA COTIZACIÓN</p>
-        <h2>Hablemos de tu proyecto.</h2>
+
+        <strong>
+          Galería de proyectos
+        </strong>
+
         <p>
-          Cuéntanos qué necesitas equipar. Más adelante conectaremos este formulario
-          con WhatsApp y los datos comerciales definitivos.
+          Próximamente incorporaremos fotografías
+          y experiencias reales.
         </p>
 
-        <div class="contact-points">
-          <div><strong>Seguridad</strong><span>Soluciones de vigilancia</span></div>
-          <div><strong>Uniformes</strong><span>Prendas para personal</span></div>
-          <div><strong>Textiles</strong><span>Productos confeccionados</span></div>
-        </div>
       </div>
 
-      <form class="contact-form" onsubmit="return false;">
-        <label>
-          Nombre
-          <input type="text" placeholder="Tu nombre">
-        </label>
-        <label>
-          Guardería / Empresa
-          <input type="text" placeholder="Nombre de la guardería o empresa">
-        </label>
-        <label>
-          ¿Qué necesitas?
-          <textarea rows="5" placeholder="Cuéntanos brevemente sobre tu proyecto"></textarea>
-        </label>
-        <button class="btn btn-primary" type="submit">Solicitar cotización</button>
-      </form>
     </div>
-  </section>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
+
+<section
+  id="contacto"
+  class="section contact">
+
+  <div class="container contact-grid">
+
+
+    <div>
+
+      <p class="eyebrow">
+        SOLICITA UNA COTIZACIÓN
+      </p>
+
+      <h2>
+        Hablemos de tu proyecto.
+      </h2>
+
+      <p>
+        Cuéntanos qué necesitas equipar.
+        Más adelante conectaremos este formulario
+        con WhatsApp y los datos comerciales definitivos.
+      </p>
+
+
+      <div class="contact-points">
+
+        <div>
+
+          <strong>
+            Seguridad
+          </strong>
+
+          <span>
+            Soluciones de vigilancia
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Uniformes
+          </strong>
+
+          <span>
+            Prendas para personal
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Textiles
+          </strong>
+
+          <span>
+            Productos confeccionados
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <form
+      class="contact-form"
+      onsubmit="return false;">
+
+
+      <label>
+
+        Nombre
+
+        <input
+          type="text"
+          placeholder="Tu nombre">
+
+      </label>
+
+
+      <label>
+
+        Guardería / Empresa
+
+        <input
+          type="text"
+          placeholder="Nombre de la guardería o empresa">
+
+      </label>
+
+
+      <label>
+
+        ¿Qué necesitas?
+
+        <textarea
+          rows="5"
+          placeholder="Cuéntanos brevemente sobre tu proyecto"></textarea>
+
+      </label>
+
+
+      <button
+        class="btn btn-primary"
+        type="submit">
+
+        Solicitar cotización
+
+      </button>
+
+
+    </form>
+
+  </div>
+
+</section>
+
 
 </main>
 
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer class="site-footer">
+
   <div class="container footer-wrap">
+
+
     <div>
-      <strong>EQUIPAMOS GUARDERÍAS</strong>
-      <p>Soluciones que cuidan lo más importante.</p>
+
+      <strong>
+        EQUIPAMOS GUARDERÍAS
+      </strong>
+
+      <p>
+        Soluciones que cuidan lo más importante.
+      </p>
+
     </div>
+
+
     <div class="footer-links">
-      <a href="#inicio">Inicio</a>
-      <a href="#soluciones">Soluciones</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
+
+      <a href="#inicio">
+        Inicio
+      </a>
+
+      <a href="#soluciones">
+        Soluciones
+      </a>
+
+      <a href="#productos">
+        Productos
+      </a>
+
+      <a href="#contacto">
+        Contacto
+      </a>
+
     </div>
-    <p>© <span id="year"></span> Equipamos Guarderías.</p>
+
+
+    <p>
+      © <span id="year"></span>
+      Equipamos Guarderías.
+    </p>
+
+
   </div>
+
 </footer>
 
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
