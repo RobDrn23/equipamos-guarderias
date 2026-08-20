@@ -121,10 +121,47 @@ h1 span { color: var(--blue); }
 .section-heading p:not(.eyebrow) { color: var(--gray); }
 
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+
+
 .card {
-  padding: 31px; background: white; border: 1px solid var(--border);
+  padding: 0px; background: white; border: 1px solid var(--border);
   border-radius: 14px; transition: transform .2s ease, box-shadow .2s ease;
 }
+
+.solution-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.solution-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.solution-image span {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  z-index: 2;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.card-top,
+.card h3,
+.card p,
+.card ul,
+.card a {
+  margin-left: 31px;
+  margin-right: 31px;
+}
+
+
+
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .card-top { display: flex; justify-content: space-between; align-items: center; }
 .card-index { color: var(--blue); font-size: 12px; font-weight: 800; }
