@@ -630,3 +630,41 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
     max-width: none;
   }
 }
+/* AJUSTE FINAL TARJETAS DE SOLUCIONES */
+
+.cards .card {
+  padding: 0 !important;
+}
+
+.cards .solution-image {
+  position: relative !important;
+  width: 100% !important;
+  height: 280px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+}
+
+.cards .solution-image img {
+  display: block !important;
+  width: 100% !important;
+  height: 280px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+}
+
+.cards .solution-image span {
+  position: absolute !important;
+  left: 16px !important;
+  bottom: 14px !important;
+  z-index: 5 !important;
+}
+
+.cards .card-top,
+.cards .card h3,
+.cards .card p,
+.cards .card ul,
+.cards .card a {
+  margin-left: 31px;
+  margin-right: 31px;
+}
