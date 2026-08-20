@@ -32,63 +32,96 @@
 <main>
 
   <section id="inicio" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <p class="eyebrow">SEGURIDAD • UNIFORMES • TEXTILES</p>
-        <h1>Soluciones que cuidan <span>lo más importante.</span></h1>
-        <p class="hero-text">
-          Soluciones especializadas para guarderías y centros infantiles,
-          pensadas para ayudarte a crear espacios seguros, funcionales y profesionales.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
-          <a class="btn btn-outline" href="#soluciones">Conocer soluciones</a>
+    <div class="hero-slider" aria-label="Presentación de Equipamos Guarderías">
+      <div class="slide active">
+        <div class="slide-image">
+          <img src="assets/slider/guarderia.svg" alt="Ambiente conceptual de una guardería">
+          <div class="slide-badge">AMBIENTE CONCEPTUAL</div>
         </div>
-
-        <div class="hero-trust">
-          <span>Atención especializada</span>
-          <span>Soluciones para guarderías</span>
-          <span>Atención por proyecto</span>
+        <div class="container slide-content">
+          <p class="eyebrow">SEGURIDAD • UNIFORMES • TEXTILES</p>
+          <h1>Soluciones que cuidan <span>lo más importante.</span></h1>
+          <p class="hero-text">
+            Soluciones especializadas para guarderías y centros infantiles,
+            pensadas para ayudarte a crear espacios seguros, funcionales y profesionales.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+            <a class="btn btn-outline" href="#productos">Conocer soluciones</a>
+          </div>
+          <div class="hero-trust">
+            <span>Atención especializada</span>
+            <span>Soluciones para guarderías</span>
+            <span>Atención por proyecto</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Áreas de especialización">
-        <div class="visual-top">
-          <span>ESPECIALISTAS EN</span>
-          <strong>Equipamiento para guarderías</strong>
+      <div class="slide">
+        <div class="slide-image">
+          <img src="assets/slider/seguridad.svg" alt="Cámara de seguridad conceptual">
+          <div class="slide-badge">SEGURIDAD</div>
         </div>
-
-        <div class="visual-pillars">
-          <div class="visual-pillar">
-            <div class="pillar-number">01</div>
-            <div>
-              <strong>Seguridad</strong>
-              <small>Protección y vigilancia</small>
-            </div>
-          </div>
-
-          <div class="visual-pillar">
-            <div class="pillar-number">02</div>
-            <div>
-              <strong>Uniformes</strong>
-              <small>Imagen y funcionalidad</small>
-            </div>
-          </div>
-
-          <div class="visual-pillar">
-            <div class="pillar-number">03</div>
-            <div>
-              <strong>Textiles</strong>
-              <small>Confort y cuidado</small>
-            </div>
+        <div class="container slide-content">
+          <p class="eyebrow">SEGURIDAD</p>
+          <h1>Protección y vigilancia <span>para tu guardería.</span></h1>
+          <p class="hero-text">
+            Cámaras y soluciones de seguridad para ayudarte a mantener mayor control
+            y tranquilidad en tus instalaciones.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver seguridad</a>
+            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
           </div>
         </div>
+      </div>
 
-        <div class="visual-bottom">
-          <div class="visual-line"></div>
-          <p>Una sola empresa para acompañar las necesidades de tu guardería.</p>
+      <div class="slide">
+        <div class="slide-image">
+          <img src="assets/slider/uniformes.svg" alt="Uniforme conceptual para personal de guardería">
+          <div class="slide-badge">UNIFORMES</div>
         </div>
+        <div class="container slide-content">
+          <p class="eyebrow">UNIFORMES</p>
+          <h1>Imagen, comodidad y <span>funcionalidad.</span></h1>
+          <p class="hero-text">
+            Prendas para el personal de guarderías, pensadas para el trabajo diario
+            y la imagen profesional de tu institución.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver uniformes</a>
+            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-image">
+          <img src="assets/slider/textiles.svg" alt="Textiles conceptuales para guarderías">
+          <div class="slide-badge">TEXTILES</div>
+        </div>
+        <div class="container slide-content">
+          <p class="eyebrow">TEXTILES</p>
+          <h1>Confort y cuidado <span>en cada detalle.</span></h1>
+          <p class="hero-text">
+            Sábanas, fundas, colchonetas y otros textiles para las diferentes áreas
+            de cuidado y descanso.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver textiles</a>
+            <a class="btn btn-outline" href="#contacto">Solicitar cotización</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-arrow slider-prev" type="button" aria-label="Imagen anterior">‹</button>
+      <button class="slider-arrow slider-next" type="button" aria-label="Imagen siguiente">›</button>
+
+      <div class="slider-dots" aria-label="Seleccionar imagen">
+        <button type="button" class="active" aria-label="Slide 1"></button>
+        <button type="button" aria-label="Slide 2"></button>
+        <button type="button" aria-label="Slide 3"></button>
+        <button type="button" aria-label="Slide 4"></button>
       </div>
     </div>
   </section>
@@ -177,7 +210,7 @@
         <article class="product-category">
           <div class="product-image placeholder-security">
             <span>SEGURIDAD</span>
-            <small>Fotografías de productos próximamente</small>
+            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
           </div>
           <div class="product-body">
             <div class="product-meta"><span>01</span><strong>SEGURIDAD</strong></div>
@@ -190,7 +223,7 @@
         <article class="product-category">
           <div class="product-image placeholder-uniforms">
             <span>UNIFORMES</span>
-            <small>Fotografías de productos próximamente</small>
+            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
           </div>
           <div class="product-body">
             <div class="product-meta"><span>02</span><strong>UNIFORMES</strong></div>
@@ -203,7 +236,7 @@
         <article class="product-category">
           <div class="product-image placeholder-textiles">
             <span>TEXTILES</span>
-            <small>Fotografías de productos próximamente</small>
+            <small>Imagen conceptual · reemplazaremos por fotografías reales</small>
           </div>
           <div class="product-body">
             <div class="product-meta"><span>03</span><strong>TEXTILES</strong></div>
