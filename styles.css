@@ -639,7 +639,7 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 .cards .solution-image {
   position: relative !important;
   width: 100% !important;
-  height: 280px !important;
+  height: 320px !important;
   overflow: hidden !important;
   margin: 0 !important;
 }
