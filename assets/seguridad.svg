@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#0b4fbd"/><stop offset="1" stop-color="#082d6c"/></linearGradient></defs>
+<rect width="900" height="620" rx="32" fill="url(#g)"/>
+<circle cx="735" cy="110" r="180" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2"/>
+<rect x="120" y="115" width="660" height="390" rx="24" fill="#fff" fill-opacity=".10" stroke="#fff" stroke-opacity=".25"/>
+<rect x="255" y="215" width="365" height="180" rx="45" fill="#f5f7fb"/>
+<rect x="220" y="250" width="80" height="110" rx="22" fill="#dfe5ee"/>
+<circle cx="505" cy="305" r="78" fill="#17202d"/>
+<circle cx="505" cy="305" r="54" fill="#0b4fbd"/>
+<circle cx="505" cy="305" r="28" fill="#17202d"/>
+<rect x="320" y="165" width="180" height="55" rx="18" fill="#dfe5ee"/>
+<text x="70" y="555" font-family="Arial" font-size="30" font-weight="700" fill="white">SEGURIDAD • IMAGEN CONCEPTUAL</text>
+</svg>
