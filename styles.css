@@ -479,11 +479,10 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 
 @media (max-width: 900px) {
   .hero-slider { min-height: 780px; }
-  .slide-content {
-    min-height: 780px;
-    padding: 55px 20px 280px;
-    justify-content: flex-start;
-  }
+.slide-content {
+  min-height: 600px;
+  padding-right: 48%;
+}
   .slide-image {
     right: 20px;
     bottom: 55px;
