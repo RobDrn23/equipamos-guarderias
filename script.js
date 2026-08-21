@@ -261,3 +261,21 @@ document.addEventListener("DOMContentLoaded", function () {
   startTimer();
 
 });
+/* ==========================================
+   TRANSICIÓN SUAVE DEL CARRUSEL PRINCIPAL
+   ========================================== */
+
+.hero-slider .slide {
+  transition:
+    opacity 0.7s ease-in-out,
+    transform 0.7s ease-in-out;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero-slider .slide:not(.active) {
+  opacity: 0;
+}
