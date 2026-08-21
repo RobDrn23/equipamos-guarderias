@@ -10,25 +10,36 @@ document.addEventListener("DOMContentLoaded", function () {
   if (menuToggle && nav) {
 
     menuToggle.addEventListener("click", function () {
+
       const open = nav.classList.toggle("open");
 
       menuToggle.setAttribute(
         "aria-expanded",
         open ? "true" : "false"
       );
+
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
+
       link.addEventListener("click", function () {
+
         nav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
       });
+
     });
+
   }
 
 
   // ==========================================
-  // AÑO AUTOMÁTICO DEL FOOTER
+  // AÑO DEL FOOTER
   // ==========================================
 
   const year = document.getElementById("year");
@@ -41,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // ==========================================
   // CARRUSEL PRINCIPAL
   // ==========================================
-
-  const slider = document.querySelector(".hero-slider");
 
   const slides = document.querySelectorAll(
     ".hero-slider .slide"
@@ -61,10 +70,21 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
 
-  // Si no existe el slider, no hacemos nada
-  if (!slides.length) {
+  // ==========================================
+  // COMPROBAR SLIDES
+  // ==========================================
+
+  if (slides.length === 0) {
+    console.log("Carrusel: no se encontraron slides");
     return;
   }
+
+
+  console.log(
+    "Carrusel iniciado:",
+    slides.length,
+    "slides"
+  );
 
 
   // ==========================================
@@ -72,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ==========================================
 
   let current = 0;
+
   let timer = null;
 
   const slideTime = 5000;
@@ -86,57 +107,63 @@ document.addEventListener("DOMContentLoaded", function () {
     current =
       (index + slides.length) % slides.length;
 
+
     slides.forEach(function (slide, i) {
 
-      slide.classList.toggle(
-        "active",
-        i === current
-      );
+      if (i === current) {
+
+        slide.classList.add("active");
+
+      } else {
+
+        slide.classList.remove("active");
+
+      }
 
     });
+
 
     dots.forEach(function (dot, i) {
 
-      dot.classList.toggle(
-        "active",
-        i === current
-      );
+      if (i === current) {
+
+        dot.classList.add("active");
+
+      } else {
+
+        dot.classList.remove("active");
+
+      }
 
     });
+
+
+    console.log(
+      "Carrusel → Slide",
+      current + 1
+    );
 
   }
 
 
   // ==========================================
-  // INICIAR TEMPORIZADOR
+  // TEMPORIZADOR
   // ==========================================
 
   function startTimer() {
 
-    stopTimer();
+    if (timer !== null) {
+
+      clearInterval(timer);
+
+    }
+
 
     timer = setInterval(function () {
 
       showSlide(current + 1);
 
     }, slideTime);
-
-  }
-
-
-  // ==========================================
-  // DETENER TEMPORIZADOR
-  // ==========================================
-
-  function stopTimer() {
-
-    if (timer !== null) {
-
-      clearInterval(timer);
-
-      timer = null;
-
-    }
 
   }
 
@@ -176,14 +203,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // ==========================================
-  // INDICADORES
+  // PUNTOS
   // ==========================================
 
-  dots.forEach(function (dot, i) {
+  dots.forEach(function (dot, index) {
 
     dot.addEventListener("click", function () {
 
-      showSlide(i);
+      showSlide(index);
 
       startTimer();
 
@@ -193,63 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // ==========================================
-  // PAUSAR AL PASAR EL MOUSE
-  // ==========================================
-
-  if (slider) {
-
-    slider.addEventListener(
-      "mouseenter",
-      function () {
-
-        stopTimer();
-
-      }
-    );
-
-    slider.addEventListener(
-      "mouseleave",
-      function () {
-
-        startTimer();
-
-      }
-    );
-
-  }
-
-
-  // ==========================================
-  // SOPORTE PARA CELULAR
-  // ==========================================
-
-  if (slider) {
-
-    slider.addEventListener(
-      "touchstart",
-      function () {
-
-        stopTimer();
-
-      },
-      { passive: true }
-    );
-
-    slider.addEventListener(
-      "touchend",
-      function () {
-
-        startTimer();
-
-      },
-      { passive: true }
-    );
-
-  }
-
-
-  // ==========================================
-  // INICIAR CARRUSEL
+  // INICIAR
   // ==========================================
 
   showSlide(0);
