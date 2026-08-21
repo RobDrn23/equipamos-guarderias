@@ -1084,3 +1084,92 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
 }
+/* ==========================================
+   AJUSTE FINAL DEL CARRUSEL EN MÓVIL
+   ========================================== */
+
+@media (max-width: 560px) {
+
+  /* Solo el slide activo puede verse */
+  .hero-slider .slide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition:
+      opacity 0.7s ease-in-out,
+      visibility 0s linear 0.7s !important;
+  }
+
+  .hero-slider .slide.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transition:
+      opacity 0.7s ease-in-out,
+      visibility 0s linear 0s !important;
+  }
+
+  /* Evitar que el contenido de otros slides se vea */
+  .hero-slider .slide:not(.active) * {
+    visibility: hidden !important;
+  }
+
+  .hero-slider .slide.active * {
+    visibility: visible !important;
+  }
+
+  /* Altura más controlada del carrusel */
+  .hero-slider {
+    min-height: 680px !important;
+    height: 680px !important;
+    overflow: hidden !important;
+  }
+
+  /* Contenido del slide */
+  .hero-slider .slide-content {
+    padding-top: 38px !important;
+    padding-bottom: 120px !important;
+  }
+
+  /* Título */
+  .hero-slider .slide-content h1 {
+    font-size: 42px !important;
+    line-height: 0.98 !important;
+  }
+
+  /* Texto */
+  .hero-slider .slide-content .hero-text {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin-top: 28px !important;
+  }
+
+  /* Botones */
+  .hero-slider .slide-content .hero-actions {
+    margin-top: 24px !important;
+  }
+
+  /* Imagen */
+  .hero-slider .slide-image {
+    height: 165px !important;
+    margin-top: 18px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-slider .slide-image img {
+    height: 165px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Flechas */
+  .hero-slider .slider-prev,
+  .hero-slider .slider-next {
+    z-index: 20 !important;
+  }
+
+  /* Indicadores */
+  .hero-slider .slider-dots {
+    z-index: 20 !important;
+  }
+}
