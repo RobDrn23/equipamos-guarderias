@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
     current =
       (index + slides.length) % slides.length;
 
-
     slides.forEach(function (slide, i) {
 
       slide.classList.toggle(
@@ -95,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
       );
 
     });
-
 
     dots.forEach(function (dot, i) {
 
@@ -209,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     );
 
-
     slider.addEventListener(
       "mouseleave",
       function () {
@@ -238,7 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
       { passive: true }
     );
 
-
     slider.addEventListener(
       "touchend",
       function () {
@@ -261,21 +257,3 @@ document.addEventListener("DOMContentLoaded", function () {
   startTimer();
 
 });
-/* ==========================================
-   TRANSICIÓN SUAVE DEL CARRUSEL PRINCIPAL
-   ========================================== */
-
-.hero-slider .slide {
-  transition:
-    opacity 0.7s ease-in-out,
-    transform 0.7s ease-in-out;
-}
-
-.hero-slider .slide.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.hero-slider .slide:not(.active) {
-  opacity: 0;
-}
