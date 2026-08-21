@@ -39,19 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // ==========================================
-  // AÑO DEL FOOTER
+  // AÑO AUTOMÁTICO DEL FOOTER
   // ==========================================
 
   const year = document.getElementById("year");
 
   if (year) {
+
     year.textContent = new Date().getFullYear();
+
   }
 
 
   // ==========================================
   // CARRUSEL PRINCIPAL
   // ==========================================
+
+  const slider = document.querySelector(".hero-slider");
 
   const slides = document.querySelectorAll(
     ".hero-slider .slide"
@@ -70,161 +74,367 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
 
-  // ==========================================
-  // COMPROBAR SLIDES
-  // ==========================================
+  // Si no existe el slider, no hacemos nada
+  if (slides.length) {
 
-  if (slides.length === 0) {
-    console.log("Carrusel: no se encontraron slides");
-    return;
-  }
+    let current = 0;
+    let timer = null;
 
-
-  console.log(
-    "Carrusel iniciado:",
-    slides.length,
-    "slides"
-  );
+    const slideTime = 5000;
 
 
-  // ==========================================
-  // CONFIGURACIÓN
-  // ==========================================
+    // ==========================================
+    // MOSTRAR SLIDE
+    // ==========================================
 
-  let current = 0;
+    function showSlide(index) {
 
-  let timer = null;
-
-  const slideTime = 5000;
-
-
-  // ==========================================
-  // MOSTRAR SLIDE
-  // ==========================================
-
-  function showSlide(index) {
-
-    current =
-      (index + slides.length) % slides.length;
+      current =
+        (index + slides.length) % slides.length;
 
 
-    slides.forEach(function (slide, i) {
+      slides.forEach(function (slide, i) {
 
-      if (i === current) {
+        slide.classList.toggle(
+          "active",
+          i === current
+        );
 
-        slide.classList.add("active");
-
-      } else {
-
-        slide.classList.remove("active");
-
-      }
-
-    });
+      });
 
 
-    dots.forEach(function (dot, i) {
+      dots.forEach(function (dot, i) {
 
-      if (i === current) {
+        dot.classList.toggle(
+          "active",
+          i === current
+        );
 
-        dot.classList.add("active");
-
-      } else {
-
-        dot.classList.remove("active");
-
-      }
-
-    });
-
-
-    console.log(
-      "Carrusel → Slide",
-      current + 1
-    );
-
-  }
-
-
-  // ==========================================
-  // TEMPORIZADOR
-  // ==========================================
-
-  function startTimer() {
-
-    if (timer !== null) {
-
-      clearInterval(timer);
+      });
 
     }
 
 
-    timer = setInterval(function () {
+    // ==========================================
+    // DETENER TEMPORIZADOR
+    // ==========================================
 
-      showSlide(current + 1);
+    function stopTimer() {
 
-    }, slideTime);
+      if (timer !== null) {
+
+        clearInterval(timer);
+
+        timer = null;
+
+      }
+
+    }
+
+
+    // ==========================================
+    // INICIAR TEMPORIZADOR
+    // ==========================================
+
+    function startTimer() {
+
+      stopTimer();
+
+      timer = setInterval(function () {
+
+        showSlide(current + 1);
+
+      }, slideTime);
+
+    }
+
+
+    // ==========================================
+    // FLECHA ANTERIOR
+    // ==========================================
+
+    if (prev) {
+
+      prev.addEventListener("click", function () {
+
+        showSlide(current - 1);
+
+        startTimer();
+
+      });
+
+    }
+
+
+    // ==========================================
+    // FLECHA SIGUIENTE
+    // ==========================================
+
+    if (next) {
+
+      next.addEventListener("click", function () {
+
+        showSlide(current + 1);
+
+        startTimer();
+
+      });
+
+    }
+
+
+    // ==========================================
+    // INDICADORES
+    // ==========================================
+
+    dots.forEach(function (dot, i) {
+
+      dot.addEventListener("click", function () {
+
+        showSlide(i);
+
+        startTimer();
+
+      });
+
+    });
+
+
+    // ==========================================
+    // PAUSAR AL PASAR EL MOUSE
+    // ==========================================
+
+    if (slider) {
+
+      slider.addEventListener(
+        "mouseenter",
+        function () {
+
+          stopTimer();
+
+        }
+      );
+
+
+      slider.addEventListener(
+        "mouseleave",
+        function () {
+
+          startTimer();
+
+        }
+      );
+
+    }
+
+
+    // ==========================================
+    // SOPORTE PARA CELULAR
+    // ==========================================
+
+    if (slider) {
+
+      slider.addEventListener(
+        "touchstart",
+        function () {
+
+          stopTimer();
+
+        },
+        { passive: true }
+      );
+
+
+      slider.addEventListener(
+        "touchend",
+        function () {
+
+          startTimer();
+
+        },
+        { passive: true }
+      );
+
+    }
+
+
+    // ==========================================
+    // INICIAR CARRUSEL
+    // ==========================================
+
+    showSlide(0);
+
+    startTimer();
 
   }
 
 
   // ==========================================
-  // FLECHA ANTERIOR
+  // FORMULARIO DE COTIZACIÓN
   // ==========================================
 
-  if (prev) {
+  const contactForm =
+    document.querySelector(".contact-form");
 
-    prev.addEventListener("click", function () {
 
-      showSlide(current - 1);
+  if (contactForm) {
 
-      startTimer();
+    contactForm.addEventListener(
+      "submit",
+      function (event) {
 
-    });
+        event.preventDefault();
+
+
+        // ======================================
+        // DATOS DEL FORMULARIO
+        // ======================================
+
+        const nombre =
+          contactForm.querySelector(
+            'input[placeholder="Tu nombre"]'
+          );
+
+        const empresa =
+          contactForm.querySelector(
+            'input[placeholder="Nombre de la guardería o empresa"]'
+          );
+
+        const necesidad =
+          contactForm.querySelector(
+            "textarea"
+          );
+
+
+        // ======================================
+        // OBTENER VALORES
+        // ======================================
+
+        const nombreValue =
+          nombre ? nombre.value.trim() : "";
+
+        const empresaValue =
+          empresa ? empresa.value.trim() : "";
+
+        const necesidadValue =
+          necesidad ? necesidad.value.trim() : "";
+
+
+        // ======================================
+        // VALIDACIÓN
+        // ======================================
+
+        if (!nombreValue) {
+
+          alert("Por favor escribe tu nombre.");
+
+          if (nombre) {
+            nombre.focus();
+          }
+
+          return;
+
+        }
+
+
+        if (!empresaValue) {
+
+          alert(
+            "Por favor escribe el nombre de la guardería o empresa."
+          );
+
+          if (empresa) {
+            empresa.focus();
+          }
+
+          return;
+
+        }
+
+
+        if (!necesidadValue) {
+
+          alert(
+            "Por favor cuéntanos qué necesitas."
+          );
+
+          if (necesidad) {
+            necesidad.focus();
+          }
+
+          return;
+
+        }
+
+
+        // ======================================
+        // NÚMERO DE WHATSAPP
+        // ======================================
+        //
+        // AQUÍ COLOCAREMOS EL NÚMERO COMERCIAL
+        // EN FORMATO INTERNACIONAL.
+        //
+        // Ejemplo México:
+        //
+        // const whatsappNumber = "526141234567";
+        //
+        // ======================================
+
+        const whatsappNumber = "XXXXXXXXXX";
+
+
+        // ======================================
+        // MENSAJE
+        // ======================================
+
+        const message =
+          "Hola, quiero solicitar una cotización.%0A%0A" +
+
+          "*Nombre:* " +
+          encodeURIComponent(nombreValue) +
+
+          "%0A" +
+
+          "*Guardería / Empresa:* " +
+          encodeURIComponent(empresaValue) +
+
+          "%0A" +
+
+          "*¿Qué necesito?:* " +
+          encodeURIComponent(necesidadValue);
+
+
+        // ======================================
+        // ABRIR WHATSAPP
+        // ======================================
+
+        if (whatsappNumber === "XXXXXXXXXX") {
+
+          alert(
+            "El formulario funciona correctamente. " +
+            "Solo falta configurar el número de WhatsApp comercial."
+          );
+
+          return;
+
+        }
+
+
+        const whatsappURL =
+          "https://wa.me/" +
+          whatsappNumber +
+          "?text=" +
+          message;
+
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+      }
+    );
 
   }
-
-
-  // ==========================================
-  // FLECHA SIGUIENTE
-  // ==========================================
-
-  if (next) {
-
-    next.addEventListener("click", function () {
-
-      showSlide(current + 1);
-
-      startTimer();
-
-    });
-
-  }
-
-
-  // ==========================================
-  // PUNTOS
-  // ==========================================
-
-  dots.forEach(function (dot, index) {
-
-    dot.addEventListener("click", function () {
-
-      showSlide(index);
-
-      startTimer();
-
-    });
-
-  });
-
-
-  // ==========================================
-  // INICIAR
-  // ==========================================
-
-  showSlide(0);
-
-  startTimer();
 
 });
