@@ -435,3 +435,59 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+/* =========================================================
+   BOTÓN WHATSAPP - IR AL FORMULARIO
+   ========================================================= */
+
+.whatsapp-form-button {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 58px;
+  height: 58px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #25D366;
+  color: white;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.whatsapp-form-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .30);
+}
+
+.whatsapp-icon {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+  .whatsapp-form-button {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .whatsapp-icon {
+    font-size: 26px;
+  }
+
+}
