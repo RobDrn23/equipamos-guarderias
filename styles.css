@@ -1349,3 +1349,14 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 .product-categories .textile-category .textile-product {
   height: 320px;
 }
+/* =========================================================
+   AJUSTE DE TARJETAS DE PRODUCTOS
+   ========================================================= */
+
+.product-categories {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-categories .textile-category {
+  grid-column: 1 / -1;
+}
