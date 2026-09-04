@@ -1334,3 +1334,18 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
 }
+/* =========================================================
+   TEXTILES A TODO EL ANCHO
+   ========================================================= */
+
+.product-categories .textile-category {
+  grid-column: 1 / -1;
+}
+
+.product-categories .textile-category .textile-gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-categories .textile-category .textile-product {
+  height: 320px;
+}
