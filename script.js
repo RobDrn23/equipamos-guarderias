@@ -387,21 +387,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // MENSAJE
         // ======================================
 
-        const message =
-          "Hola, quiero solicitar una cotización.%0A%0A" +
-
-          "*Nombre:* " +
-          encodeURIComponent(nombreValue) +
-
-          "%0A" +
-
-          "*Guardería / Empresa:* " +
-          encodeURIComponent(empresaValue) +
-
-          "%0A" +
-
-          "*¿Qué necesito?:* " +
-          encodeURIComponent(necesidadValue);
+     const message =
+    "Hola, quiero solicitar una cotización.%0A%0A" +
+    "*Nombre:* " +
+    encodeURIComponent(nombreValue) +
+    "%0A" +
+    "*Guardería / Empresa:* " +
+    encodeURIComponent(empresaValue) +
+    "%0A" +
+    "*¿Qué necesito?:* " +
+    encodeURIComponent(necesidadValue) +
+    "%0A%0A" +
+    "Equipamos Guarderías";
 
 
         // ======================================
