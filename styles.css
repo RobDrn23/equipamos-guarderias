@@ -1590,24 +1590,29 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 ===================================================== */
 
 section.projects .projects-grid .client-card .client-logo {
-  height: 200px !important;
-  min-height: 200px !important;
-  max-height: 200px !important;
+  height: 170px !important;
+  min-height: 170px !important;
+  max-height: 170px !important;
+  padding: 15px !important;
   overflow: hidden !important;
+
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+
+  background: #ffffff !important;
 }
 
 section.projects .projects-grid .client-card .client-logo img {
-  width: 70% !important;
-  height: 150px !important;
-  min-width: 0 !important;
-  min-height: 0 !important;
-  max-width: 70% !important;
-  max-height: 150px !important;
+  width: 45% !important;
+  max-width: 45% !important;
+
+  height: 110px !important;
+  max-height: 110px !important;
+
   object-fit: contain !important;
   object-position: center !important;
+
   display: block !important;
   margin: 0 auto !important;
 }
