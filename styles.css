@@ -1428,26 +1428,9 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
 }
+
 /* =========================================================
-   UNIFORMES — AJUSTE PARA CELULAR
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-  .uniforms-catalog {
-    height: auto;
-  }
-
-  .uniforms-catalog img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-
-}
-/* =========================================================
-   CATÁLOGO UNIFORMES — CELULAR
+   UNIFORMES — IMAGEN COMPLETA EN CELULAR
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -1455,15 +1438,19 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   .uniforms-catalog {
     height: auto !important;
     min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
     overflow: visible !important;
   }
 
   .uniforms-catalog img {
     width: 100% !important;
     height: auto !important;
+    min-height: 0 !important;
     max-height: none !important;
+    aspect-ratio: auto !important;
     object-fit: contain !important;
-    display: block;
+    display: block !important;
   }
 
 }
