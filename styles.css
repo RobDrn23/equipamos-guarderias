@@ -1365,3 +1365,61 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
     height: 300px;
   }
 }
+
+/* =========================================================
+   TEXTILES — FORZAR GALERÍA 2 x 2
+   ========================================================= */
+
+.textile-category .textile-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2px !important;
+  width: 100% !important;
+}
+
+.textile-category .textile-product {
+  position: relative !important;
+  width: 100% !important;
+  height: 320px !important;
+  overflow: hidden !important;
+  background: white !important;
+}
+
+.textile-category .textile-product img {
+  display: block !important;
+  width: 100% !important;
+  height: 320px !important;
+  object-fit: contain !important;
+  padding: 8px !important;
+  margin: 0 !important;
+}
+
+.textile-category .textile-product span {
+  position: absolute !important;
+  left: 10px !important;
+  right: 10px !important;
+  bottom: 10px !important;
+  z-index: 10 !important;
+  padding: 7px 9px !important;
+  background: rgba(7, 59, 143, .92) !important;
+  color: white !important;
+  border-radius: 5px !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+/* CELULAR */
+@media (max-width: 900px) {
+  .textile-category .textile-gallery {
+    grid-template-columns: 1fr !important;
+  }
+
+  .textile-category .textile-product {
+    height: 300px !important;
+  }
+
+  .textile-category .textile-product img {
+    height: 300px !important;
+  }
+}
