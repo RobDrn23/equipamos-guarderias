@@ -1151,19 +1151,21 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   .hero-slider .slide-content .hero-actions {
     margin-top: 24px !important;
   }
+  
+/* Imagen — mostrar completa en celular */
+.hero-slider .slide-image {
+  height: 165px !important;
+  margin-top: 18px !important;
+  overflow: hidden !important;
+}
 
-  /* Imagen */
-  .hero-slider .slide-image {
-    height: 165px !important;
-    margin-top: 18px !important;
-    overflow: hidden !important;
-  }
-
-  .hero-slider .slide-image img {
-    height: 165px !important;
-    width: 100% !important;
-    object-fit: cover !important;
-  }
+.hero-slider .slide-image img {
+  height: 165px !important;
+  width: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
 
   /* Flechas */
   .hero-slider .slider-prev,
