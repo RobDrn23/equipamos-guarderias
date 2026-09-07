@@ -1357,7 +1357,9 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   text-align: center;
 }
 
-@media (max-width: 900px) {
+/* CELULAR */
+
+@media (max-width: 700px) {
 
   .textile-gallery {
     grid-template-columns: 1fr;
