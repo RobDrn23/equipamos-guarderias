@@ -1490,22 +1490,26 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 }
 
 .client-logo {
-  height: 220px;
-  padding: 25px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  border-bottom: 1px solid #e8edf3;
+  width: 100% !important;
+  height: 220px !important;
+  padding: 20px 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e8edf3 !important;
+  overflow: hidden !important;
 }
 
 .client-logo img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  height: 170px;
-  object-fit: contain;
-  object-position: center;
+  display: block !important;
+  width: auto !important;
+  max-width: 80% !important;
+  height: auto !important;
+  max-height: 165px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  margin: 0 auto !important;
 }
 
 .client-body {
@@ -1547,6 +1551,7 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   font-weight: 700;
 }
 
+
 /* =====================================================
    CLIENTES - MÓVIL
 ===================================================== */
@@ -1560,13 +1565,15 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
   .client-logo {
-    height: 190px;
-    padding: 20px 25px;
+    height: 180px !important;
+    padding: 15px 20px !important;
   }
 
   .client-logo img {
-    height: 145px;
-    max-width: 420px;
+    width: auto !important;
+    max-width: 85% !important;
+    height: auto !important;
+    max-height: 140px !important;
   }
 
   .client-body {
