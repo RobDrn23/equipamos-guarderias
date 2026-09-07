@@ -1313,6 +1313,7 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
 }
+
 /* =========================================================
    TEXTILES — GALERÍA HORIZONTAL
    ========================================================= */
@@ -1327,8 +1328,7 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
 .product-categories .textile-category .textile-gallery .textile-product {
   position: relative !important;
   width: 100% !important;
-height: 240px !important;
-max-height: 240px !important;
+  height: 260px !important;
   overflow: hidden !important;
   background: white;
 }
@@ -1336,16 +1336,49 @@ max-height: 240px !important;
 .product-categories .textile-category .textile-gallery .textile-product img {
   display: block !important;
   width: 100% !important;
-  height: 240px !important;
-  max-height: 240px !important;
-  max-width: 100% !important;
-  object-fit: contain !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .product-categories .textile-category .textile-product span {
-  display: none;
+  position: absolute !important;
+  left: 10px !important;
+  right: 10px !important;
+  bottom: 10px !important;
+  z-index: 5 !important;
+
+  display: block !important;
+  padding: 7px 9px !important;
+  border-radius: 5px !important;
+
+  background: rgba(7, 59, 143, .92) !important;
+  color: white !important;
+
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+}
+
+/* CELULAR */
+
+@media (max-width: 900px) {
+
+  .product-categories .textile-category .textile-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .product-categories .textile-category .textile-product {
+    height: 260px !important;
+  }
+
+  .product-categories .textile-category .textile-product img {
+    height: 260px !important;
+  }
+
 }
 
 /* CELULAR */
