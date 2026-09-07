@@ -1336,8 +1336,8 @@ max-height: 240px !important;
 .product-categories .textile-category .textile-gallery .textile-product img {
   display: block !important;
   width: 100% !important;
-  height: 300px !important;
-  max-height: 300px !important;
+  height: 240px !important;
+  max-height: 240px !important;
   max-width: 100% !important;
   object-fit: contain !important;
   padding: 0 !important;
@@ -1356,8 +1356,8 @@ max-height: 240px !important;
     grid-template-columns: 1fr;
   }
 
-  .product-categories .textile-category .textile-product {
-    height: 300px;
+.product-categories .textile-category .textile-product {
+  height: 240px;
   }
 
 }
