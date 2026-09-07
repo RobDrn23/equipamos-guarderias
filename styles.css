@@ -1454,3 +1454,17 @@ input:focus, textarea:focus { outline: 2px solid rgba(11,79,189,.18); border-col
   }
 
 }
+/* =========================================================
+   UNIFORMES — MOSTRAR IMAGEN COMPLETA EN NUESTAS SOLUCIONES
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .cards .solution-card .solution-image img[src*="uniformes"] {
+    height: 260px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: #ffffff;
+  }
+
+}
