@@ -435,3 +435,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+// =====================================================
+// POP-UP - RESPALDO DE DVR
+// =====================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dvrPopup = document.getElementById("dvrPopup");
+  const dvrPopupClose = document.getElementById("dvrPopupClose");
+  const dvrPopupOverlay = document.querySelector(".dvr-popup-overlay");
+  const dvrPopupContact = document.getElementById("dvrPopupContact");
+
+  if (!dvrPopup) return;
+
+  function openDvrPopup() {
+    dvrPopup.classList.add("active");
+    dvrPopup.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeDvrPopup() {
+    dvrPopup.classList.remove("active");
+    dvrPopup.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  dvrPopupClose.addEventListener("click", closeDvrPopup);
+
+  dvrPopupOverlay.addEventListener("click", closeDvrPopup);
+
+  if (dvrPopupContact) {
+    dvrPopupContact.addEventListener("click", closeDvrPopup);
+  }
+
+  document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+      closeDvrPopup();
+    }
+
+  });
+
+  setTimeout(openDvrPopup, 700);
+
+});
