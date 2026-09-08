@@ -2207,3 +2207,12 @@ section.projects .projects-grid .client-card .client-logo img {
   }
 
 }
+/* =====================================================
+   PROMOCIÓN DVR EN GALERÍA DE SEGURIDAD
+===================================================== */
+
+.security-dvr-promo img {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+}
