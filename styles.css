@@ -2040,3 +2040,98 @@ section.projects .projects-grid .client-card .client-logo img {
   }
 
 }
+/* =====================================================
+   AJUSTE FINAL - SERVICIO DVR
+===================================================== */
+
+.security-service-highlight {
+  width: 100% !important;
+  box-sizing: border-box !important;
+
+  display: grid !important;
+  grid-template-columns: 28% 72% !important;
+  gap: 28px !important;
+
+  align-items: center !important;
+
+  padding: 20px !important;
+  margin-bottom: 30px !important;
+
+  overflow: hidden !important;
+}
+
+
+/* IMAGEN DVR */
+
+.security-service-image {
+  width: 100% !important;
+  height: 300px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+}
+
+.security-service-image img {
+  display: block !important;
+
+  width: auto !important;
+  height: 100% !important;
+
+  max-width: 100% !important;
+  max-height: 300px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  border-radius: 10px !important;
+}
+
+
+/* TEXTO */
+
+.security-service-content {
+  min-width: 0 !important;
+}
+
+.security-service-content h4 {
+  font-size: 21px !important;
+  margin-bottom: 10px !important;
+}
+
+.security-service-content p {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+.security-service-content ul {
+  margin-bottom: 15px !important;
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .security-service-highlight {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 16px !important;
+  }
+
+  .security-service-image {
+    height: 240px !important;
+  }
+
+  .security-service-image img {
+    height: 240px !important;
+    max-height: 240px !important;
+  }
+
+}
