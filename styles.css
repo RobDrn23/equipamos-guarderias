@@ -1865,3 +1865,80 @@ section.projects .projects-grid .client-card .client-logo img {
   }
 
 }
+/* =====================================================
+   AJUSTE FINAL - TAMAÑO IMAGEN POP-UP DVR
+===================================================== */
+
+.dvr-popup-box {
+  width: min(900px, 92vw) !important;
+  max-height: 90vh !important;
+
+  display: grid !important;
+  grid-template-columns: 38% 62% !important;
+
+  overflow: hidden !important;
+}
+
+.dvr-popup-image {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+
+  padding: 25px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+}
+
+.dvr-popup-image img {
+  display: block !important;
+
+  width: 85% !important;
+  height: auto !important;
+
+  max-width: 85% !important;
+  max-height: 460px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  border-radius: 10px !important;
+}
+
+.dvr-popup-content {
+  min-width: 0 !important;
+  overflow-y: auto !important;
+}
+
+
+/* =====================================================
+   POP-UP DVR - MÓVIL
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .dvr-popup-box {
+    display: block !important;
+    width: 94vw !important;
+    max-height: 94vh !important;
+  }
+
+  .dvr-popup-image {
+    width: 100% !important;
+    height: 210px !important;
+    min-height: 210px !important;
+    padding: 12px !important;
+  }
+
+  .dvr-popup-image img {
+    width: 85% !important;
+    height: auto !important;
+    max-width: 85% !important;
+    max-height: 190px !important;
+    object-fit: contain !important;
+  }
+
+}
